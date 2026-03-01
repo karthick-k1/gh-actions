@@ -1,0 +1,16 @@
+# Trigger Criteria #
+on:
+    workflow_dispatch:
+    
+# flow #
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: OS release file
+              run: cat /etc/os-release
+              
+            - name: Print Hello 
+              run: echo "Hello GH Actions"
